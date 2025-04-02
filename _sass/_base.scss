@@ -6,7 +6,7 @@
   .btn {
     color: var(--global-text-color);
     // border: 1p var(--global-text-color);
-    border-radius: 1rem;
+    // border-radius: 1rem;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     padding-top: 0.1rem;
@@ -19,21 +19,21 @@
 
 .spotlight{
   background-color: rgba($yellow-color, 0.4);
-  border-radius: 0.7rem;
+  // border-radius: 0.7rem;
   padding-top: 0.1rem;
   padding-left: 0.1rem;
 }
 .awardTag{
   .btn {
-    color: var(--global-text-color);
+    color: white;
     // border: 1p var(--global-text-color);
-    border-radius: 1rem;
+    // border-radius: 1rem;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     margin-left: 0;
-    background-color: rgba($red-color-dark, 0.3);;
+    background-color: var(--global-theme-color);;
     &:hover {
       color: var(--global-theme-color);
       border: 0.07rem solid black;
@@ -45,7 +45,7 @@
 
 // Typography
 
-p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
+p, h1, h2, h3, h4, h5, h6, em, li, span, strong {
   color: var(--global-text-color);
 }
 
@@ -394,7 +394,7 @@ footer.sticky-bottom {
       background-color: inherit;
 
       .badge {
-        color: var(--global-card-bg-color) !important;
+        color: white;
         background-color: var(--global-theme-color) !important;
       }
     }
@@ -529,7 +529,7 @@ footer.sticky-bottom {
     .btn {
       color: var(--global-text-color);
       // border: 1p var(--global-text-color);
-      border-radius: 1rem;
+      // border-radius: 1rem;
       padding-left: 1rem;
       padding-right: 1rem;
       padding-top: 0.25rem;
@@ -611,10 +611,10 @@ footer.sticky-bottom {
       margin-bottom: 1rem;
       .preview {
         width: 100%;
-        min-width: 300px;
-        max-width: 400px;
+        min-width: 170px;
+        max-width: 270px;
         padding-right: 1rem;
-        margin: auto;
+        // margin: auto;
       }
       
       .abbr {
@@ -622,6 +622,7 @@ footer.sticky-bottom {
         margin-bottom: 0.5rem;
         abbr {
           display: inline-block;
+          color: #ffffff;
           background-color: var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
@@ -665,44 +666,60 @@ footer.sticky-bottom {
       .links{
         a.btn {
           color: var(--global-text-color);
-          // border: 1p var(--global-text-color);
-          border-radius: 1rem;
+          border: 1px solid var(--global-text-color);
           padding-left: 1rem;
           padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
+          padding-top: .25rem;
+          padding-bottom: .25rem;
           margin-left: 0;
-          background-color: rgba($red-color-dark, 0.3);;
           &:hover {
             color: var(--global-theme-color);
             border: 0.07rem solid black;
             border-color: black;
             background-color: white;
           }
-        }
+      }
+
+        // a.btn {
+        //   color: var(--global-text-color);
+        //   // border: 1p var(--global-text-color);
+        //   border-radius: 1rem;
+        //   padding-left: 1rem;
+        //   padding-right: 1rem;
+        //   padding-top: 0.25rem;
+        //   padding-bottom: 0.25rem;
+        //   margin-left: 0;
+        //   background-color: rgba($red-color-dark, 0.3);;
+        //   &:hover {
+        //     color: var(--global-theme-color);
+        //     border: 0.07rem solid black;
+        //     border-color: black;
+        //     background-color: white;
+        //   }
+        // }
 
         a.btn-year {
-          color: var(--global-text-color);
-          border-radius: 1rem;
+          color: #000000;
+          // border-radius: 1rem;
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           margin-left: 0;
-          background-color: rgba($yellow-color, 0.4);;
+          background-color: rgba($grey-color-light,0.7);;
           font-size: 0.7rem;
           font-weight: bold;
         }
 
         a.btn-honor {
-          color: var(--global-text-color);
-          border-radius: 1rem;
+          color: #ffffff;
+          // border-radius: 1rem;
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           margin-left: 0;
-          background-color: rgba($green-color, 0.4);;
+          background-color: var(--global-theme-color);
           font-size: 0.7rem;
           font-weight: bold;
           white-space: nowrap;
@@ -769,7 +786,7 @@ pre {
 code {
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
-  border-radius: 3px;
+  // border-radius: 3px;
   padding: 3px 3px;
 }
 
@@ -816,11 +833,11 @@ html.transition *:after {
   white-space: nowrap;
   justify-content: center;
   align-items: center;
-  background: rgba(144, 0, 58, 0.3); /* Define your gradient colors */
+  background: rgba($grey-color-light,0.7); /* Define your gradient colors */
   color: #000000; /* Text color */
   font-weight: bold; /* Make the text bold if desired */
   text-align: center; /* Center-align the text */
-  border-radius: 10px; /* Add rounded corners */
+  // border-radius: 10px; /* Add rounded corners */
   margin: 5px 2px 5px 2px;
   padding: 5px 2px 5px 2px;
   font-size:x-small;
@@ -828,7 +845,7 @@ html.transition *:after {
   min-width: 75px; /* Set a minimum width for consistency */
   justify-content: center;
   align-items: center;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  // box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -836,3 +853,6 @@ tr{
   display: flex;
   align-items: center;
 }
+
+
+

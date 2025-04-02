@@ -1,9 +1,19 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
 "NAACL":
-  url: https://2022.naacl.org/
+  color: "var(--global-theme-color)"
+  abbr: "NAACL"
+
+"ICLR":
+  color: "var(--global-theme-color)"
+  abbr: "ICLR"
+
+"WWW":
+  color: "var(--global-theme-color)"
+  abbr: "WWW"
+
+"NeurIPS":
+  color: "var(--global-theme-color)"
+  abbr: "NeurIPS"
+
+"SEPLN":
+  color: "var(--global-theme-color)"
+  abbr: "SEPLN"
